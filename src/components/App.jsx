@@ -33,8 +33,6 @@ export const App = () => {
     return Math.round((good / countTotalFeedback()) * 100);
   };
 
-  countPositiveFeedbackPercentage();
-
   return (
     <div className={styles.container}>
       <Section title="Please leave feedback">
