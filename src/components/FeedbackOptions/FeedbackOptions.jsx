@@ -1,5 +1,7 @@
 import styles from './style.module.css';
 
+import PropTypes from 'prop-types';
+
 const FeedbackOptions = props => {
   const IncrementFeedback = e => {
     const { name } = e.target;
@@ -34,6 +36,10 @@ const FeedbackOptions = props => {
       </button>
     </div>
   );
+};
+
+FeedbackOptions.propTypes = {
+  onLeaveFeedback: PropTypes.func.isRequired,
 };
 
 export default FeedbackOptions;
